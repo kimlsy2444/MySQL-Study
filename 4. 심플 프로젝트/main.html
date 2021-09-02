@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>쇼핑몰[회원 관리 시스템]</h1>
+    <a href="select.php">1)회원 조회(조회 후 수정/삭제 가능)</a>
+    <br /><br />
+    <a href="insert.php">2)신규 회원 등록</a>
+    <br /><br />
+    <form method="get" action="update.php">
+        3)회원 수정 - 회원 아이디 :
+        <input type="text" name="userID">
+        <input type="submit" value="수정">
+    </form>
+    <br /><br />
+    <form method="get" action="delete.php">
+        4)회원 삭제 - 회원 아이디 :
+        <input type="text" name="userID">
+        <input type="submit" value="삭제">
+    </form>
+    <br /><br />
+
+    <form method="get" action="shop.php">
+        5)쇼핑몰 로그인 <br />
+        회원 아이디 : <input type="text" name="userID"> <br />
+        회원 이 름 : <input type="text" name="userName">
+        <input type="submit" value="로그인">
+    </form>
+    <br /><br />
+
+    <form method="get" action="time.php">
+        6) 예상 배달 시간 조회 <br />
+        회원 아이디 : <input type="text" name="userID">
+        <input type="submit" value="확인">
+    </form>
+    <br /><br />
+
+    <form method="get" action="viprank.php">
+        7)쇼핑몰 VIP <br />
+        회원 이름 : <input type="text" name="userName">
+        <input type="submit" value="확인">
+    </form>
+</body>
+
+</html>
